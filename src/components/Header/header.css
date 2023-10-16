@@ -76,6 +76,7 @@ ul.submenu {
     line-height: 1.25rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
     white-space: nowrap;
+    z-index: 9;
 }
 ul.submenu li {    
     display: flex;
@@ -90,6 +91,17 @@ ul.submenu li a {
 }
 ul.submenu li a:hover {
     background-color: rgb(255 237 213 / 1);
+}
+ul.submenu li.close-row {
+    padding: 1rem;
+    justify-content: end;
+    color: #fff;
+} 
+.closeMenu-back {
+    color:#fff;
+}
+ul.submenu li.close-row svg {
+    fill:currentColor
 }
 .right-nav ul.submenu {
     padding: 0.5rem 0.0rem;
@@ -393,6 +405,9 @@ ul.submenu.show {
     .desktop-memu.show {        
         right: 0;
     }
+    .tab-hidden {
+        display: none !important;
+    }
 }
 @media (min-width:1024px) {
     .secondary-navbar {
@@ -419,5 +434,37 @@ ul.submenu.show {
         right: 0;
         min-width: auto;
         z-index: 9;
+    }
+}
+
+@media (max-width:767px) {
+    ul.submenu {
+        background-color: rgb(210 65 21 / 1);
+        width: 100%;
+        top: 0px;
+        height: 100%;
+        position: fixed;
+        padding-top: 20px;
+    }
+    ul.submenu li.close-row svg {
+        fill: currentColor;
+        height: 1rem;
+        width: 1rem;
+    }
+    ul.submenu li.close-row.tab-hidden {
+        padding:0;
+    }
+    ul.submenu li.close-row .closeMenu-back {
+        position: absolute;
+        left:0
+    }
+    ul.submenu li a:hover {
+         background-color: transparent;
+    }
+    button.dropdown-label {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
 }

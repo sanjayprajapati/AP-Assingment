@@ -349,6 +349,10 @@ const Header = () => {
                   label={<div>Live Sessions</div>}
                   onOpen={() => console.log("Opening men")}
                 >
+                  <li className="close-row">
+                    
+                    <buttom className='closeMenu-all' onClick={dropDownMenu}><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" className="h-4 w-4 fill-current"><path fillRule="evenodd" d="M.793.793a1 1 0 0 1 1.414 0L6.5 5.086 10.793.793a1 1 0 1 1 1.414 1.414L7.914 6.5l4.293 4.293a1 1 0 0 1-1.414 1.414L6.5 7.914l-4.293 4.293a1 1 0 0 1-1.414-1.414L5.086 6.5.793 2.207a1 1 0 0 1 0-1.414Z"></path></svg></buttom>
+                  </li>
                   <li>
                     <Link to="/">Bhagavad Gita</Link>
                   </li>
