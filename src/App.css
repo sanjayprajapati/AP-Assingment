@@ -48,6 +48,9 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+del {
+  margin-left: 0.375rem;
+}
 button {
   cursor: pointer;
 }
