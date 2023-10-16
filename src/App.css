@@ -119,6 +119,15 @@ ul,ol {
   margin-left: -1rem;
   margin-right: -1rem;
 }
+.social-share ul {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.social-share ul li a svg {
+  width:1.75rem;
+  height: 1.75rem;
+}
 @media (min-width: 1024px) {
   .laptop\:text-lg {
       font-size: 1.125rem;
